@@ -2,7 +2,7 @@ const data: Object[] = [
   {
     country: "Canada",
     capital: "Ottawa",
-    imageFileName: "toronto.jpg",
+    imageFileName: "ottawa.jpg",
   },
   {
     country: "Greenland",
