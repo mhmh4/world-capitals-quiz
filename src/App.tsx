@@ -30,6 +30,10 @@ function App() {
     setSrc("./src/images/" + imageFileName);
   }, []);
 
+  function handleSubmit() {
+    selection === answer ? alert("correct") : alert("not correct");
+  }
+
   return (
     <>
       <div className="mx-auto min-h-screen w-2/3 pt-[15vh]">
@@ -53,9 +57,11 @@ function App() {
                 </div>
               );
             })}
+            <button type="submit" onClick={handleSubmit}>
+              Submit
+            </button>
           </div>
         </div>
-        <button type="submit">Submit</button>
       </div>
     </>
   );
