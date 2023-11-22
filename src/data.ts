@@ -1,4 +1,6 @@
-const data: Object[] = [
+import { CapitalInfo } from "./definitions";
+
+const data: CapitalInfo[] = [
   {
     country: "Canada",
     capital: "Ottawa",
