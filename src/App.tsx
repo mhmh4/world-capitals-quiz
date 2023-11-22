@@ -5,8 +5,18 @@ import data from "./data";
 
 function App() {
   const [src, setSrc] = useState("");
+  const [options, setOptions] = useState<string[]>([]);
 
   useEffect(() => {
+    const shuffledData = data.sort(() => 0.5 - Math.random());
+    const prefix = shuffledData.slice(0, 4);
+
+    setOptions(
+      prefix.map((item) => {
+        return item.capital;
+      }),
+    );
+
     const { imageFileName } = sample(data)!;
     setSrc("./src/images/" + imageFileName);
   }, []);
