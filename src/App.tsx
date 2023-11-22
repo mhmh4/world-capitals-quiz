@@ -29,14 +29,14 @@ function App() {
             <img src={src} alt="img"></img>
           </div>
           <div className="w-1/2">
-            <input type="radio" name="selection" />
-            <label>Option 1</label>
-            <input type="radio" name="selection" />
-            <label>Option 2</label>
-            <input type="radio" name="selection" />
-            <label>Option 3</label>
-            <input type="radio" name="selection" />
-            <label>Option 4</label>
+            {options.map((option, index) => {
+              return (
+                <>
+                  <input type="radio" name="option" />
+                  <label key={index}>{option}</label>
+                </>
+              );
+            })}
           </div>
         </div>
         <button type="submit">Submit</button>
