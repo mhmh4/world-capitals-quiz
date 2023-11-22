@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { sample } from "lodash";
+import { useEffect, useState } from "react";
+
+import data from "./data";
 
 function App() {
   const [src, setSrc] = useState("");
+
+  useEffect(() => {
+    const { imageFileName } = sample(data)!;
+    setSrc("./src/images/" + imageFileName);
+  }, []);
 
   return (
     <>
