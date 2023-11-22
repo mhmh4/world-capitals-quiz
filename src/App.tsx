@@ -17,7 +17,8 @@ function App() {
       }),
     );
 
-    const { imageFileName } = sample(data)!;
+    const target = sample(prefix)!;
+    const { imageFileName } = target;
     setSrc("./src/images/" + imageFileName);
   }, []);
 
