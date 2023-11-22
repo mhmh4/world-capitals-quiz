@@ -1,10 +1,14 @@
+import { useState } from "react";
+
 function App() {
+  const [src, setSrc] = useState("");
+
   return (
     <>
       <div className="mx-auto min-h-screen w-2/3 pt-[15vh]">
         <div className="flex">
           <div className="w-1/2 border">
-            <img src={""} alt="img"></img>
+            <img src={src} alt="img"></img>
           </div>
           <div className="w-1/2">
             <input type="radio" name="selection" />
