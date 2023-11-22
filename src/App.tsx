@@ -8,6 +8,8 @@ function App() {
   const [country, setCountry] = useState<string>("");
   const [options, setOptions] = useState<string[]>([]);
 
+  const [selection, setSelection] = useState<string>("");
+
   useEffect(() => {
     const shuffledData = data.sort(() => 0.5 - Math.random());
     const prefix = shuffledData.slice(0, 4);
@@ -37,7 +39,13 @@ function App() {
             {options.map((option, index) => {
               return (
                 <div key={index}>
-                  <input type="radio" name="option" />
+                  <input
+                    type="radio"
+                    name="option"
+                    onClick={() => {
+                      setSelection(option);
+                    }}
+                  />
                   <label>{option}</label>
                 </div>
               );
