@@ -9,6 +9,7 @@ function App() {
   const [options, setOptions] = useState<string[]>([]);
 
   const [selection, setSelection] = useState<string>("");
+  const [answer, setAnswer] = useState<string>("");
 
   useEffect(() => {
     const shuffledData = data.sort(() => 0.5 - Math.random());
@@ -22,6 +23,8 @@ function App() {
 
     const target = sample(prefix)!;
     const { imageFileName } = target;
+
+    setAnswer(target.capital);
 
     setCountry(target.country);
     setSrc("./src/images/" + imageFileName);
