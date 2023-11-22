@@ -36,10 +36,10 @@ function App() {
             <h1>What is the capital of {country}?</h1>
             {options.map((option, index) => {
               return (
-                <>
+                <div key={index}>
                   <input type="radio" name="option" />
-                  <label key={index}>{option}</label>
-                </>
+                  <label>{option}</label>
+                </div>
               );
             })}
           </div>
