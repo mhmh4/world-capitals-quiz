@@ -5,6 +5,7 @@ import data from "./data";
 
 function App() {
   const [src, setSrc] = useState("");
+  const [country, setCountry] = useState<string>("");
   const [options, setOptions] = useState<string[]>([]);
 
   useEffect(() => {
@@ -19,6 +20,8 @@ function App() {
 
     const target = sample(prefix)!;
     const { imageFileName } = target;
+
+    setCountry(target.country);
     setSrc("./src/images/" + imageFileName);
   }, []);
 
@@ -30,6 +33,7 @@ function App() {
             <img src={src} alt="img"></img>
           </div>
           <div className="w-1/2">
+            <h1>What is the capital of {country}?</h1>
             {options.map((option, index) => {
               return (
                 <>
