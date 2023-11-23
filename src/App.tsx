@@ -45,15 +45,16 @@ function App() {
             <h1>What is the capital of {country}?</h1>
             {options.map((option, index) => {
               return (
-                <div key={index}>
-                  <input
-                    type="radio"
-                    name="option"
-                    onClick={() => {
-                      setSelection(option);
-                    }}
-                  />
-                  <label>{option}</label>
+                <div
+                  className={`my-2 cursor-pointer rounded border-2 border-slate-300 p-2 ${
+                    option == selection && "border-blue-400 bg-slate-100"
+                  }`}
+                  key={index}
+                  onClick={() => {
+                    setSelection(option);
+                  }}
+                >
+                  {option}
                 </div>
               );
             })}
