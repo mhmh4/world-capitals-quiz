@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import data from "./data";
 
 function App() {
-  const [src, setSrc] = useState("");
+  const [src, setSrc] = useState<string>("");
   const [country, setCountry] = useState<string>("");
   const [options, setOptions] = useState<string[]>([]);
 
