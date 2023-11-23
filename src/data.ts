@@ -2,6 +2,11 @@ import { CapitalInfo } from "./definitions";
 
 const data: CapitalInfo[] = [
   {
+    country: "Albania",
+    capital: "Tirana",
+    imageFileName: "tirana.jpg",
+  },
+  {
     country: "Bolivia",
     capital: "Sucre",
     imageFileName: "sucre.jpg",
@@ -22,14 +27,29 @@ const data: CapitalInfo[] = [
     imageFileName: "bogota.jpg",
   },
   {
+    country: "Denmark",
+    capital: "Copenhagen",
+    imageFileName: "copenhagen.jpg",
+  },
+  {
     country: "Greenland",
     capital: "Nuuk",
     imageFileName: "nuuk.jpg",
   },
   {
+    country: "Ireland",
+    capital: "Dublin",
+    imageFileName: "dublin.jpg",
+  },
+  {
     country: "Mexico",
     capital: "Mexico City",
     imageFileName: "mexico-city.jpg",
+  },
+  {
+    country: "Switzerland",
+    capital: "Bern",
+    imageFileName: "bern.jpg",
   },
   {
     country: "United States",
