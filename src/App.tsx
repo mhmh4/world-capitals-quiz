@@ -36,13 +36,13 @@ function App() {
 
   return (
     <>
-      <div className="mx-auto min-h-screen w-2/3 pt-[15vh]">
+      <div className="mx-auto min-h-screen w-[75vw] pt-[10vh]">
         <div className="flex">
-          <div className="w-1/2 border">
-            <img src={src} alt="img"></img>
+          <div className="w-2/3">
+            <img className="rounded-xl" src={src} alt="img"></img>
           </div>
-          <div className="w-1/2">
-            <h1>What is the capital of {country}?</h1>
+          <div className="w-1/3 px-4">
+            <h1 className="text-xl">What is the capital of {country}?</h1>
             {options.map((option, index) => {
               return (
                 <div
