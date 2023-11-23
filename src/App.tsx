@@ -65,9 +65,13 @@ function App() {
                 </div>
               );
             })}
-            <button type="submit" onClick={handleSubmit}>
-              Submit
-            </button>
+            {hasSubmitted ? (
+              <button>Next</button>
+            ) : (
+              <button type="submit" onClick={handleSubmit}>
+                Submit
+              </button>
+            )}
           </div>
         </div>
       </div>
