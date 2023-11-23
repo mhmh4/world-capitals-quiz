@@ -1,4 +1,4 @@
-import { sample } from "lodash";
+import { sample, shuffle } from "lodash";
 import { useEffect, useState } from "react";
 
 import data from "./data";
@@ -16,7 +16,7 @@ function App() {
   const [score, setScore] = useState<number>(0);
 
   useEffect(() => {
-    const shuffledData = data.sort(() => 0.5 - Math.random());
+    const shuffledData = shuffle(data);
     const prefix = shuffledData.slice(0, 4);
 
     setOptions(
