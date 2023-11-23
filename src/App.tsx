@@ -41,6 +41,28 @@ function App() {
     setHasSubmitted(true);
   }
 
+  function handleNext() {
+    setSelection("");
+    setHasSubmitted(false);
+
+    const shuffledData = data.sort(() => 0.5 - Math.random());
+    const prefix = shuffledData.slice(0, 4);
+
+    setOptions(
+      prefix.map((item) => {
+        return item.capital;
+      }),
+    );
+
+    const target = sample(prefix)!;
+    const { imageFileName } = target;
+
+    setAnswer(target.capital);
+
+    setCountry(target.country);
+    setSrc("./src/images/" + imageFileName);
+  }
+
   return (
     <>
       <div className="mx-auto min-h-screen w-[75vw] pt-[10vh]">
@@ -66,7 +88,9 @@ function App() {
               );
             })}
             {hasSubmitted ? (
-              <button>Next</button>
+              <button type="button" onClick={handleNext}>
+                Next
+              </button>
             ) : (
               <button type="submit" onClick={handleSubmit}>
                 Submit
