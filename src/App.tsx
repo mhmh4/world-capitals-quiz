@@ -8,6 +8,8 @@ function App() {
   const [country, setCountry] = useState<string>("");
   const [options, setOptions] = useState<string[]>([]);
 
+  const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
+
   const [selection, setSelection] = useState<string>("");
   const [answer, setAnswer] = useState<string>("");
 
@@ -31,7 +33,12 @@ function App() {
   }, []);
 
   function handleSubmit() {
-    selection === answer ? alert("correct") : alert("not correct");
+    if (selection === answer) {
+      alert("correct");
+    } else {
+      alert("not correct");
+    }
+    setHasSubmitted(true);
   }
 
   return (
