@@ -35,13 +35,10 @@ function App() {
   }, []);
 
   function handleSubmit() {
+    setHasSubmitted(true);
     if (selection === answer) {
       setScore((currentScore) => currentScore + 1);
-      alert("correct");
-    } else {
-      alert("not correct");
     }
-    setHasSubmitted(true);
   }
 
   function handleNext() {
@@ -80,7 +77,12 @@ function App() {
               return (
                 <div
                   className={`my-2 cursor-pointer rounded border-2 border-slate-300 p-2 ${
-                    option == selection && "border-blue-400 bg-slate-100"
+                    (hasSubmitted &&
+                      ((selection === answer &&
+                        option == answer &&
+                        "bg-green-200") ||
+                        (option == selection && "bg-red-200"))) ||
+                    (option === selection && "border-blue-400 bg-slate-100")
                   }`}
                   key={index}
                   onClick={() => {
