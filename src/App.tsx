@@ -45,14 +45,14 @@ function App() {
     setSelection("");
     setHasSubmitted(false);
 
-    const shuffledData = data.sort(() => 0.5 - Math.random());
+    const shuffledData = shuffle(data);
     const prefix = shuffledData.slice(0, 4);
 
-    setOptions(
-      prefix.map((item) => {
+    setOptions(() => {
+      return prefix.map((item) => {
         return item.capital;
-      }),
-    );
+      });
+    });
 
     const target = sample(prefix)!;
     const { imageFileName } = target;
