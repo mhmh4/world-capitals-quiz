@@ -7,6 +7,11 @@ const data: CapitalInfo[] = [
     imageFileName: "tirana.jpg",
   },
   {
+    country: "Algeria",
+    capital: "Algiers",
+    imageFileName: "algiers.jpg",
+  },
+  {
     country: "Bolivia",
     capital: "Sucre",
     imageFileName: "sucre.jpg",
@@ -45,6 +50,11 @@ const data: CapitalInfo[] = [
     country: "Mexico",
     capital: "Mexico City",
     imageFileName: "mexico-city.jpg",
+  },
+  {
+    country: "Morocco",
+    capital: "Rabat",
+    imageFileName: "rabat.jpg",
   },
   {
     country: "Switzerland",
