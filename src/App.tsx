@@ -92,11 +92,19 @@ function App() {
               );
             })}
             {hasSubmitted ? (
-              <button type="button" onClick={handleNext}>
+              <button
+                className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                type="button"
+                onClick={handleNext}
+              >
                 Next
               </button>
             ) : (
-              <button type="submit" onClick={handleSubmit}>
+              <button
+                className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                type="submit"
+                onClick={handleSubmit}
+              >
                 Submit
               </button>
             )}
