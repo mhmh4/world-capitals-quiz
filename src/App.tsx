@@ -13,6 +13,8 @@ function App() {
   const [selection, setSelection] = useState<string>("");
   const [answer, setAnswer] = useState<string>("");
 
+  const [score, setScore] = useState<number>(0);
+
   useEffect(() => {
     const shuffledData = data.sort(() => 0.5 - Math.random());
     const prefix = shuffledData.slice(0, 4);
@@ -34,6 +36,7 @@ function App() {
 
   function handleSubmit() {
     if (selection === answer) {
+      setScore((currentScore) => currentScore + 1);
       alert("correct");
     } else {
       alert("not correct");
@@ -66,6 +69,7 @@ function App() {
   return (
     <>
       <div className="mx-auto min-h-screen w-[75vw] pt-[10vh]">
+        Score: {score}
         <div className="flex">
           <div className="w-2/3">
             <img className="rounded-xl" src={src} alt="img"></img>
