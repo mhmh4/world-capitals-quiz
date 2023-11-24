@@ -12,6 +12,11 @@ const data: CapitalInfo[] = [
     imageFileName: "algiers.jpg",
   },
   {
+    country: "Bahrain",
+    capital: "Manama",
+    imageFileName: "manama.jpg",
+  },
+  {
     country: "Bolivia",
     capital: "Sucre",
     imageFileName: "sucre.jpg",
@@ -52,6 +57,11 @@ const data: CapitalInfo[] = [
     imageFileName: "dublin.jpg",
   },
   {
+    country: "Kuwait",
+    capital: "Kuwait City",
+    imageFileName: "kuwait-city.jpg",
+  },
+  {
     country: "Mexico",
     capital: "Mexico City",
     imageFileName: "mexico-city.jpg",
@@ -60,6 +70,21 @@ const data: CapitalInfo[] = [
     country: "Morocco",
     capital: "Rabat",
     imageFileName: "rabat.jpg",
+  },
+  {
+    country: "Oman",
+    capital: "Muscat",
+    imageFileName: "muscat.jpg",
+  },
+  {
+    country: "Qatar",
+    capital: "Doha",
+    imageFileName: "doha.jpg",
+  },
+  {
+    country: "Saudi Arabia",
+    capital: "Riyadh",
+    imageFileName: "riyadh.jpg",
   },
   {
     country: "Switzerland",
