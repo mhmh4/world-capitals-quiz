@@ -57,6 +57,11 @@ const data: CapitalInfo[] = [
     imageFileName: "dublin.jpg",
   },
   {
+    country: "Jordan",
+    capital: "Amman",
+    imageFileName: "amman.jpg",
+  },
+  {
     country: "Kuwait",
     capital: "Kuwait City",
     imageFileName: "kuwait-city.jpg",
