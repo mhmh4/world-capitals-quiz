@@ -108,6 +108,7 @@ function App() {
               </button>
             ) : (
               <button
+                disabled={selection === ""}
                 className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
                 type="submit"
                 onClick={handleSubmit}
