@@ -17,32 +17,10 @@ function App() {
   const [score, setScore] = useState<number>(0);
 
   useEffect(() => {
-    const shuffledData = shuffle(data);
-    const prefix = shuffledData.slice(0, 4);
-
-    setOptions(
-      prefix.map((item) => {
-        return item.capital;
-      }),
-    );
-
-    const target = sample(prefix)!;
-    const { imageFileName } = target;
-
-    setAnswer(target.capital);
-
-    setCountry(target.country);
-    setSrc("./src/images/" + imageFileName);
+    reset();
   }, []);
 
-  function handleSubmit() {
-    setHasSubmitted(true);
-    if (selection === answer) {
-      setScore((currentScore) => currentScore + 1);
-    }
-  }
-
-  function handleNext() {
+  function reset() {
     setSelection("");
     setHasSubmitted(false);
 
@@ -62,6 +40,13 @@ function App() {
 
     setCountry(target.country);
     setSrc("./src/images/" + imageFileName);
+  }
+
+  function handleSubmit() {
+    setHasSubmitted(true);
+    if (selection === answer) {
+      setScore((currentScore) => currentScore + 1);
+    }
   }
 
   return (
@@ -102,7 +87,7 @@ function App() {
               <button
                 className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
                 type="button"
-                onClick={handleNext}
+                onClick={reset}
               >
                 Next
               </button>
