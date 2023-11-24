@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { sample, shuffle } from "lodash";
 import { useEffect, useState } from "react";
 
@@ -76,14 +77,18 @@ function App() {
             {options.map((option, index) => {
               return (
                 <div
-                  className={`my-2 cursor-pointer rounded border-2 border-slate-300 p-2 ${
-                    (hasSubmitted &&
-                      ((selection === answer &&
-                        option == answer &&
-                        "bg-green-200") ||
-                        (option == selection && "bg-red-200"))) ||
-                    (option === selection && "border-blue-400 bg-slate-100")
-                  }`}
+                  className={clsx(
+                    "my-2 cursor-pointer rounded border-2 border-slate-300 p-2",
+                    {
+                      "bg-green-200": hasSubmitted && option === answer,
+                      "bg-red-200":
+                        hasSubmitted &&
+                        option === selection &&
+                        selection !== answer,
+                      "border-blue-400 bg-slate-100":
+                        !hasSubmitted && option === selection,
+                    },
+                  )}
                   key={index}
                   onClick={() => {
                     setSelection(option);
