@@ -47,6 +47,16 @@ const data: CapitalInfo[] = [
     imageFileName: "nuuk.jpg",
   },
   {
+    country: "Guatemala",
+    capital: "Guatemala City",
+    imageFileName: "guatemala-city.jpg",
+  },
+  {
+    country: "Haiti",
+    capital: "Port-au-Prince",
+    imageFileName: "port-au-prince.jpg",
+  },
+  {
     country: "Indonesia",
     capital: "Jakarta",
     imageFileName: "jakarta.jpg",
@@ -55,6 +65,11 @@ const data: CapitalInfo[] = [
     country: "Ireland",
     capital: "Dublin",
     imageFileName: "dublin.jpg",
+  },
+  {
+    country: "Japan",
+    capital: "Tokyo",
+    imageFileName: "tokyo.jpg",
   },
   {
     country: "Jordan",
@@ -80,6 +95,11 @@ const data: CapitalInfo[] = [
     country: "Oman",
     capital: "Muscat",
     imageFileName: "muscat.jpg",
+  },
+  {
+    country: "Pakistan",
+    capital: "Islamabad",
+    imageFileName: "islamabad.jpg",
   },
   {
     country: "Qatar",
