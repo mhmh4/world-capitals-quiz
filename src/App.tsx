@@ -60,13 +60,13 @@ function App() {
   return (
     <>
       <div className="mx-auto min-h-screen w-[75vw] pt-[10vh]">
-        Score: {score}
+        <div className="text-slate-500">Score: {score}</div>
+        <h1 className="text-xl">What is the capital of {country}?</h1>
         <div className="flex">
           <div className="w-2/3">
             <img className="rounded-xl" src={src} alt="img"></img>
           </div>
           <div className="w-1/3 px-4">
-            <h1 className="text-xl">What is the capital of {country}?</h1>
             {options.map((option, index) => {
               return (
                 <div
@@ -78,8 +78,9 @@ function App() {
                         hasSubmitted &&
                         option === selection &&
                         selection !== answer,
-                      "border-blue-400 bg-slate-100":
+                      "border-blue-300 bg-blue-50":
                         !hasSubmitted && option === selection,
+                      "hover:bg-slate-100": !hasSubmitted,
                     },
                   )}
                   key={index}
