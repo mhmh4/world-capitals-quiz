@@ -69,22 +69,23 @@ function App() {
             <div className="w-2/3">
               <img className="rounded-xl" src={src} alt="img"></img>
             </div>
-            <div className="w-1/3 px-4">
-              <div className="flex flex-col">
+            <div className="flex w-1/3 flex-col px-4">
+              <div className="flex grow flex-col">
                 {options.map((option, index) => {
                   return (
                     <div
                       className={clsx(
-                        "mb-2 grow cursor-pointer rounded border-2 border-slate-400 p-2",
+                        "mb-2 grow cursor-pointer rounded-lg border-2",
                         {
                           "bg-green-200": hasSubmitted && option === answer,
                           "bg-red-200":
                             hasSubmitted &&
                             option === selection &&
                             selection !== answer,
-                          "border-blue-400 bg-blue-50":
+                          "border-slate-300 bg-slate-50 hover:border-slate-400 hover:bg-slate-100":
+                            !hasSubmitted && option !== selection,
+                          "border-blue-400 bg-blue-100":
                             !hasSubmitted && option === selection,
-                          "hover:bg-slate-100": !hasSubmitted,
                         },
                       )}
                       key={index}
@@ -99,7 +100,7 @@ function App() {
               </div>
               {hasSubmitted ? (
                 <button
-                  className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                  className="mt-3 w-full rounded border bg-slate-200 py-1 hover:bg-slate-300"
                   type="button"
                   onClick={reset}
                 >
@@ -108,7 +109,7 @@ function App() {
               ) : (
                 <button
                   disabled={selection === ""}
-                  className="mt-3 w-1/2 rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                  className="mt-3 w-full rounded border bg-slate-200 py-1 hover:bg-slate-300"
                   type="submit"
                   onClick={handleSubmit}
                 >
