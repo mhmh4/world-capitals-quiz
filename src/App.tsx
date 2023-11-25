@@ -3,8 +3,11 @@ import { sample, shuffle } from "lodash";
 import { useEffect, useState } from "react";
 
 import data from "./data";
+import { CapitalInfo } from "./definitions";
 
 function App() {
+  const [bank, setBank] = useState<CapitalInfo[]>(data);
+
   const [src, setSrc] = useState<string>("");
   const [country, setCountry] = useState<string>("");
   const [options, setOptions] = useState<string[]>([]);
@@ -24,7 +27,7 @@ function App() {
     setSelection("");
     setHasSubmitted(false);
 
-    const shuffledData = shuffle(data);
+    const shuffledData = shuffle(bank);
     const prefix = shuffledData.slice(0, 4);
 
     setOptions(() => {
@@ -47,6 +50,11 @@ function App() {
     if (selection === answer) {
       setScore((currentScore) => currentScore + 1);
     }
+    setBank((currentBank) => {
+      return currentBank.filter((item) => {
+        return item.capital !== answer;
+      });
+    });
   }
 
   return (
