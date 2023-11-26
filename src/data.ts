@@ -32,6 +32,11 @@ const data: CapitalInfo[] = [
     imageFileName: "ottawa.jpg",
   },
   {
+    country: "Chile",
+    capital: "Santiago",
+    imageFileName: "santiago.jpg",
+  },
+  {
     country: "Colombia",
     capital: "Bogotá",
     imageFileName: "bogota.jpg",
@@ -42,6 +47,11 @@ const data: CapitalInfo[] = [
     imageFileName: "copenhagen.jpg",
   },
   {
+    country: "Ecuador",
+    capital: "Quito",
+    imageFileName: "quito.jpg",
+  },
+  {
     country: "Greenland",
     capital: "Nuuk",
     imageFileName: "nuuk.jpg",
@@ -50,6 +60,11 @@ const data: CapitalInfo[] = [
     country: "Guatemala",
     capital: "Guatemala City",
     imageFileName: "guatemala-city.jpg",
+  },
+  {
+    country: "Guyana",
+    capital: "Georgetown",
+    imageFileName: "georgetown.jpg",
   },
   {
     country: "Haiti",
@@ -107,6 +122,16 @@ const data: CapitalInfo[] = [
     imageFileName: "islamabad.jpg",
   },
   {
+    country: "Paraguay",
+    capital: "Asunción",
+    imageFileName: "asuncion.jpg",
+  },
+  {
+    country: "Peru",
+    capital: "Lima",
+    imageFileName: "lima.jpg",
+  },
+  {
     country: "Qatar",
     capital: "Doha",
     imageFileName: "doha.jpg",
@@ -115,6 +140,11 @@ const data: CapitalInfo[] = [
     country: "Saudi Arabia",
     capital: "Riyadh",
     imageFileName: "riyadh.jpg",
+  },
+  {
+    country: "Suriname",
+    capital: "Paramaribo",
+    imageFileName: "paramaribo.jpg",
   },
   {
     country: "Switzerland",
@@ -135,6 +165,11 @@ const data: CapitalInfo[] = [
     country: "United States",
     capital: "Washington, D.C.",
     imageFileName: "washington-dc.jpg",
+  },
+  {
+    country: "Uruguay",
+    capital: "Montevideo",
+    imageFileName: "montevideo.jpg",
   },
   {
     country: "Venezuela",
