@@ -59,7 +59,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="select-none">
         <div className="mx-auto min-h-full w-3/4">
           <div className="my-6 text-center">
             <div className="text-slate-500">Score: {score}</div>
