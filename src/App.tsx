@@ -67,7 +67,11 @@ function App() {
           </div>
           <div className="flex">
             <div className="w-2/3">
-              <img className="rounded-xl" src={src} alt="img"></img>
+              <img
+                className="rounded-xl shadow-[rgba(50,50,105,0.15)_0px_2px_5px_0px,_rgba(0,0,0,0.05)_0px_1px_1px_0px]"
+                src={src}
+                alt="img"
+              ></img>
             </div>
             <div className="flex w-1/3 flex-col px-4">
               <div className="flex grow flex-col">
