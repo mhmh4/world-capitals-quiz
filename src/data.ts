@@ -112,6 +112,11 @@ const data: CapitalInfo[] = [
     imageFileName: "rabat.jpg",
   },
   {
+    country: "Nepal",
+    capital: "Kathmandu",
+    imageFileName: "kathmandu.jpg",
+  },
+  {
     country: "Oman",
     capital: "Muscat",
     imageFileName: "muscat.jpg",
