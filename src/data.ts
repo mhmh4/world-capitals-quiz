@@ -142,6 +142,11 @@ const data: CapitalInfo[] = [
     imageFileName: "riyadh.jpg",
   },
   {
+    country: "Somalia",
+    capital: "Mogadishu",
+    imageFileName: "mogadishu.jpg",
+  },
+  {
     country: "Suriname",
     capital: "Paramaribo",
     imageFileName: "paramaribo.jpg",
