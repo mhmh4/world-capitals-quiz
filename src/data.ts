@@ -12,9 +12,29 @@ const data: CapitalInfo[] = [
     imageFileName: "algiers.jpg",
   },
   {
+    country: "Antigua and Barbuda",
+    capital: "Saint John's",
+    imageFileName: "saint-john's.jpg",
+  },
+  {
+    country: "Bahamas",
+    capital: "Nassau",
+    imageFileName: "nassau.jpg",
+  },
+  {
     country: "Bahrain",
     capital: "Manama",
     imageFileName: "manama.jpg",
+  },
+  {
+    country: "Barbados",
+    capital: "Bridgetown",
+    imageFileName: "bridgetown.jpg",
+  },
+  {
+    country: "Belize",
+    capital: "Belmopan",
+    imageFileName: "belmopan.jpg",
   },
   {
     country: "Bolivia",
@@ -42,9 +62,29 @@ const data: CapitalInfo[] = [
     imageFileName: "bogota.jpg",
   },
   {
+    country: "Costa Rica",
+    capital: "San José",
+    imageFileName: "san-jose.jpg",
+  },
+  {
+    country: "Cuba",
+    capital: "Havana",
+    imageFileName: "havana.jpg",
+  },
+  {
     country: "Denmark",
     capital: "Copenhagen",
     imageFileName: "copenhagen.jpg",
+  },
+  {
+    country: "Dominica",
+    capital: "Roseau",
+    imageFileName: "roseau.jpg",
+  },
+  {
+    country: "Dominican Republic",
+    capital: "Santo Domingo",
+    imageFileName: "santo-domingo.jpg",
   },
   {
     country: "Ecuador",
@@ -52,9 +92,19 @@ const data: CapitalInfo[] = [
     imageFileName: "quito.jpg",
   },
   {
+    country: "El Salvador",
+    capital: "San Salvador",
+    imageFileName: "san-salvador.jpg",
+  },
+  {
     country: "Greenland",
     capital: "Nuuk",
     imageFileName: "nuuk.jpg",
+  },
+  {
+    country: "Grenada",
+    capital: "Saint George's",
+    imageFileName: "saint-george's.jpg",
   },
   {
     country: "Guatemala",
@@ -72,6 +122,11 @@ const data: CapitalInfo[] = [
     imageFileName: "port-au-prince.jpg",
   },
   {
+    country: "Honduras",
+    capital: "Tegucigalpa",
+    imageFileName: "tegucigalpa.jpg",
+  },
+  {
     country: "Indonesia",
     capital: "Jakarta",
     imageFileName: "jakarta.jpg",
@@ -80,6 +135,11 @@ const data: CapitalInfo[] = [
     country: "Ireland",
     capital: "Dublin",
     imageFileName: "dublin.jpg",
+  },
+  {
+    country: "Jamaica",
+    capital: "Kingston",
+    imageFileName: "kingston.jpg",
   },
   {
     country: "Japan",
@@ -122,6 +182,11 @@ const data: CapitalInfo[] = [
     imageFileName: "kathmandu.jpg",
   },
   {
+    country: "Nicaragua",
+    capital: "Managua",
+    imageFileName: "managua.jpg",
+  },
+  {
     country: "Oman",
     capital: "Muscat",
     imageFileName: "muscat.jpg",
@@ -130,6 +195,11 @@ const data: CapitalInfo[] = [
     country: "Pakistan",
     capital: "Islamabad",
     imageFileName: "islamabad.jpg",
+  },
+  {
+    country: "Panama",
+    capital: "Panama City",
+    imageFileName: "panama-city.jpg",
   },
   {
     country: "Paraguay",
@@ -157,6 +227,21 @@ const data: CapitalInfo[] = [
     imageFileName: "mogadishu.jpg",
   },
   {
+    country: "Saint Kitts and Nevis",
+    capital: "Basseterre",
+    imageFileName: "basseterre.jpg",
+  },
+  {
+    country: "Saint Lucia",
+    capital: "Castries",
+    imageFileName: "castries.jpg",
+  },
+  {
+    country: "Saint Vincent and the Grenadines",
+    capital: "Kingstown",
+    imageFileName: "kingstown.jpg",
+  },
+  {
     country: "Suriname",
     capital: "Paramaribo",
     imageFileName: "paramaribo.jpg",
@@ -175,6 +260,11 @@ const data: CapitalInfo[] = [
     country: "Thailand",
     capital: "Bangkok",
     imageFileName: "bangkok.jpg",
+  },
+  {
+    country: "Trinidad and Tobago",
+    capital: "Port of Spain",
+    imageFileName: "port-of-spain.jpg",
   },
   {
     country: "United States",
