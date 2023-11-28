@@ -102,6 +102,11 @@ const data: CapitalInfo[] = [
     imageFileName: "bishkek.jpg",
   },
   {
+    country: "Madagascar",
+    capital: "Antananarivo",
+    imageFileName: "antananarivo.jpg",
+  },
+  {
     country: "Mexico",
     capital: "Mexico City",
     imageFileName: "mexico-city.jpg",
