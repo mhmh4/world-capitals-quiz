@@ -108,7 +108,7 @@ function App() {
                   type="button"
                   onClick={reset}
                 >
-                  Next
+                  Continue
                 </button>
               ) : (
                 <button
