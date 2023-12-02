@@ -104,7 +104,7 @@ function App() {
               </div>
               {hasSubmitted ? (
                 <button
-                  className="mt-3 w-full rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                  className="mx-auto mt-3 w-2/3 cursor-pointer rounded-md bg-[#3E5C76] py-1.5 text-white"
                   type="button"
                   onClick={reset}
                 >
@@ -113,7 +113,7 @@ function App() {
               ) : (
                 <button
                   disabled={selection === ""}
-                  className="mt-3 w-full rounded border bg-slate-200 py-1 hover:bg-slate-300"
+                  className="mx-auto mt-3 w-2/3 cursor-pointer rounded-md bg-[#3E5C76] py-1.5 text-white"
                   type="submit"
                   onClick={handleSubmit}
                 >
