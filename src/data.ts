@@ -281,6 +281,11 @@ const data: CapitalInfo[] = [
     capital: "Caracas",
     imageFileName: "caracas.jpg",
   },
+  {
+    country: "Yemen",
+    capital: "Sana'a",
+    imageFileName: "sana'a.jpg",
+  },
 ];
 
 export default data;
